@@ -1,6 +1,6 @@
 import { Habit, WeeklyAnalytics, User } from './types';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://habit-tracker-server-urol.onrender.com';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
 
 // Helper to get auth headers
 function getAuthHeaders(): HeadersInit {
