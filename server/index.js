@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 // CORS Configuration
 const allowedOrigins = [
   'http://localhost:3000',
-  process.env.FRONTEND_URL || 'https://habit-tracker-frontend-zwts.onrender.com/'
+  process.env.FRONTEND_URL || 'https://habit-tracker-frontend-zwts.onrender.com'
 ];
 
 app.use(cors({
