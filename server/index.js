@@ -11,12 +11,12 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
+// CORS Configuration
 app.use(cors({
-  origin: [
-    "https://habit-tracker-frontend-zwts.onrender.com/"
-  ],
-  credentials: true
+  origin: 'https://habit-tracker-frontend-zwts.onrender.com',
+  credentials: true,
+  methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
 
